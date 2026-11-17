@@ -1,0 +1,30 @@
+﻿data:
+  raw_path: data/raw/Online Retail.xlsx
+  parquet_path: data/interim/online_retail.parquet
+  batches_dir: data/batches
+  batch_freq: M
+quality:
+  required_columns: [InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country]
+  max_null_ratio_description: 0.01
+  min_rows_per_batch: 100
+features:
+  top_n_products: 50
+  lags: [1, 2, 4]
+  rolling_window: 4
+  output_path: data/processed/features.parquet
+training:
+  experiment_name: online_retail_demand
+  model_name: online_retail_demand
+  tracking_uri: sqlite:///mlflow.db
+  test_weeks: 8
+  promotion_tolerance: 0.01
+  params:
+    n_estimators: 100
+    max_depth: 8
+    random_state: 42
+api:
+  db_path: data/app.db
+orchestration:
+  alerts_path: logs/alerts.log
+  api_url: http://127.0.0.1:8000
+  schedule_cron: "0 6 1 * *"

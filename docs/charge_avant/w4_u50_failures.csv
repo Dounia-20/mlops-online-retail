@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+POST,/feedback,HTTPError('500 Server Error: Internal Server Error for url: /feedback'),5,2026-11-13T00:43:01Z,2026-11-13T00:43:14Z
+POST,/predict,CatchResponseError('HTTP 0'),1,2026-11-13T00:43:14Z,2026-11-13T00:43:14Z
+POST,/predict,CatchResponseError('HTTP 500'),49,2026-11-13T00:43:00Z,2026-11-13T00:43:23Z

@@ -1,0 +1,15 @@
+pandas
+openpyxl
+pyarrow
+pyyaml
+pytest
+scikit-learn
+mlflow
+joblib
+fastapi
+uvicorn
+httpx
+prefect
+prometheus-client
+locust
+tabulate

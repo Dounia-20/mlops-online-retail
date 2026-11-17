@@ -1,0 +1,2 @@
+2026-11-10T22:24:10 ALERTE Pipeline 'curious-deer' en échec : Flow run encountered an exception: DataQualityError: batch_2011-03.parquet : Colonnes manquantes : ['Quantity']
+2026-11-10T22:29:36 ALERTE Pipeline 'observant-coot' en échec : Flow run encountered an exception: DataQualityError: batch_2011-03.parquet : Colonnes manquantes : ['Quantity']
