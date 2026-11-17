@@ -214,3 +214,9 @@ La planification par défaut est mensuelle (le premier jour du mois à 6 h). Pou
 
 
 Pour la supervision, lancer l'API avec un seul processus (`uvicorn src.api.main:app --host 0.0.0.0 --port 8000`) : avec plusieurs workers, les métriques Prometheus sont incohérentes. Le mode multi-workers sert aux tests de charge et au dimensionnement.
+
+## Équipe
+
+- Dounia EL AMRANI : pipeline, API, orchestration
+- Khaoula EDHANE : tests, reproductibilité
+- Hassan MENSOURI : supervision, documentation
